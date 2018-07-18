@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Nova Mono', monospace;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+header{
+    height: 100vh;
+}
+.container-fluid {
+    background: black;
+    width: 100%;
+}  
+
+
+.light {
+   
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    font-size: 1000%;
+    background: url(img/1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: absolute;
+    top: 200px;
+}
+@media only screen and (max-width: 700px) {
+    .light {
+        width: 350px;
+        top: 120px;
+        line-height: 1;
+    }
+}
+
+.every {
+    font-family: 'Anton', sans-serif;
+    padding-left: 10px;
+    font-size: 200%;
+    color: #bfbfbf;
+    position: absolute;
+    top: 400px;
+    left: 170px;
+}
+@media only screen and (max-width: 700px) {
+    .every {
+        top: 450px;
+        left: 20px;
+    }
+}
+
+.navbar {
+    background: black;
+}
+nav li {
+	padding: 10px 50px;
+}
+.parallax {
+    background-image: url("img/3.jpg");
+    min-height: 600px; 
+    min-width: 102%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.card-deck {
+    padding: 50px 0 50px;
+}
+
+.about {
+   
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    font-size: 800%;
+    background: url(img/1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+@media only screen and (max-width: 600px) {
+    .about {
+        font-size: 600%;
+    }
+}
+
+.parallax2 {
+    background-image: url("img/5.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.gallery{
+    padding-bottom: 20px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    left: -1000px !important;
+    bottom: 730px !important;
+}
+.contact {
+    color: white;
+    font-size: 90%;
+    font-weight: 100;
+    line-height: 2;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.footer{
+    padding-top: 20px;
+    height: 150px;
+    color: grey;
+    font-size: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+/*animations*/
+.p1 {
+  
+    background: #0a0909;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateY(-200px);
+    animation: swim 50s both 1s linear infinite;
+   
+  }
+  .p2 {
+    
+    background:#0a0909;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(200px);
+    top:-300px;
+    animation: swim2 60s both 1s linear infinite;
+  }
+  .p3 {
+   
+    background: #0a0909;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    right:0;
+    animation: swim3 50s both 1s linear infinite;
+  }
+  .p4 {
+   
+    background: #0a0909;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    animation: swim4 80s both 1s linear infinite;
+  }
+  .p5 {
+    
+    background: #0a0909;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    right: -500px;
+    animation: swim5 60s both 1s linear infinite;
+  }
+
+  .p6 {
+    background: #0a0909;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    animation: swim6 60s both 1s linear infinite;
+  }
+  
+/* keyframes */  
+   @keyframes swim {
+    0% { transform: translateY(-200px);}
+    30% { transform: translate(500px, 300px);}
+    60% { transform: translate(700px, 200px);}
+    100% { transform: translateY(-200px);}
+  }
+  
+ @keyframes swim2 {
+    0% { transform: translateX(200px);}
+    30% { transform: translateY(500px);}
+    60% { transform: translateX(800px);}
+    100% { transform: translateX(200px);}
+  }
+  @keyframes swim3{
+    0% { transform: translateY(-100px);}
+    50% { transform: translate(-200px, 300px);}
+    100% { transform: translateY(-100px);}
+  }
+  @keyframes swim4 {
+    0% { transform: translate(700px, -200px);}
+    30% { transform: translate(500px,400px);}
+    60% { transform: translate(0px);}
+    100% { transform: translate(700px, -200px);}
+  }
+  
